@@ -8,7 +8,7 @@ if __name__ == "__main__":
     crabs = Crabs()
     crabs.set_seeds(seed)
     crabs.set_logger(level=logging.DEBUG)
-    crabs.set_http_client(max_redirects=5)
+    crabs.set_http_client(max_redirects=5, html_parser="lxml")
     crabs.set_routes(routes)
 
     crabs.set_url_filter(allow_netlocs = ["*.163.com"],
