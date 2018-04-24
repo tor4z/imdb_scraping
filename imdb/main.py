@@ -5,9 +5,9 @@ import logging
 if __name__ == "__main__":
     seed = ["http://www.acfun.cn"]
     crabs = Crabs()
-    crabs.set_max_depth(3)
+    crabs.set_max_depth(2)
     crabs.set_seeds(seed)
-    crabs.set_log_level(logging.WARNING)
+    crabs.set_log_level(logging.INFO)
     crabs.set_client_max_redirects(5)
     crabs.update_routes(routes)
     crabs.set_allow_netloc(["www.acfun.cn"])
