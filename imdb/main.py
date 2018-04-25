@@ -7,7 +7,7 @@ if __name__ == "__main__":
     seed = ["http://www.163.com"]
     crabs = Crabs()
     crabs.set_seeds(seed)
-    crabs.set_logger(level=logging.DEBUG)
+    crabs.set_logger(level=logging.INFO)
     crabs.set_http_client(max_redirects=5, html_parser="lxml")
     crabs.set_routes(routes)
 
